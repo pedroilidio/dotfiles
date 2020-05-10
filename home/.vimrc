@@ -27,3 +27,5 @@ function! SynGroup()
 endfun
 
 nnoremap <C-i> :call SynGroup()<ENTER>
+
+let g:slime_target = "kitty"
