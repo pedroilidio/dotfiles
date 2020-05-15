@@ -1,4 +1,6 @@
-export PS1="\e[38;5;221m\W -> \e[0m"
+#export PS1="\e[38;5;221m\W -> \e[0m"
+export PS1="\[\e[38;5;221m\]\W -> \[\e[0m\]"
+# export PS1="\W -> "  # no color
 alias ls='ls --color=auto'
 alias chrome-refresh-windows-size='cp ~/.config/google-chrome/Default/PreferencesBKP ~/.config/google-chrome/Default/Preferences'
 alias py='python -q'
