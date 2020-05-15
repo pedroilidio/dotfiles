@@ -19,7 +19,7 @@
 # print only to clipboard (removing after did not work)
 ctrl + {_,shift +,alt +} Print
     sleep 0.2; \
-    scrot --exec 'xclip -selection c -t image/png < $f', \
+    scrot --exec 'xclip -selection c -t image/png < $f' \
     {_,--select --freeze,--focused} \
     ~/Imagens/screenshots/$(date +%F_%T).png
 
