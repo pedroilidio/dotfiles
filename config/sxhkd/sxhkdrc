@@ -2,8 +2,30 @@
 # wm independent hotkeys
 #
 
-print
-	gnome-screenshot
+# screen brightness
+{XF86MonBrightnessUp,XF86MonBrightnessDown}
+    xbacklight {-inc,-dec} 10
+
+# volume control
+{XF86AudioRaiseVolume,XF86AudioLowerVolume,XF86AudioMute}
+    amixer -q sset Master {10%+,10%-,toggle}
+
+# print screen (DON'T FORGET TO CREATE OUTDIRECTORY)
+{_,shift +,alt +} Print
+    sleep 0.2; \
+    scrot {_,--select --freeze,--focused} \
+    ~/Imagens/screenshots/$(date +%F_%T).png
+
+# print only to clipboard (removing after did not work)
+ctrl + {_,shift +,alt +} Print
+    sleep 0.2; \
+    scrot --exec 'xclip -selection c -t image/png < $f', \
+    {_,--select --freeze,--focused} \
+    ~/Imagens/screenshots/$(date +%F_%T).png
+
+# reload sxhkd
+alt + super + s
+    pkill -USR1 -x sxhkd
 
 # browser
 super + b
@@ -14,7 +36,7 @@ super + Return
 	kitty
 
 # program launcher
-super + @space
+super + space
 	rofi -show
 
 # make sxhkd reload its configuration files:
