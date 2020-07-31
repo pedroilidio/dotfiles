@@ -8,7 +8,7 @@
 
 # volume control
 {XF86AudioRaiseVolume,XF86AudioLowerVolume,XF86AudioMute}
-    amixer -q sset Master {10%+,10%-,toggle}
+    amixer -qD pulse set Master {10%+,10%-,toggle}
 
 # print screen (DON'T FORGET TO CREATE OUTDIRECTORY)
 {_,shift +,alt +} Print
@@ -30,6 +30,12 @@ alt + super + s
 # browser
 super + b
 	firefox
+# chat
+super + c
+    telegram-desktop
+# file-explorer
+super + n
+    nautilus
 
 # terminal emulator
 super + Return

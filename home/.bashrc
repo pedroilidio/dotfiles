@@ -5,6 +5,7 @@ alias ls='ls --color=auto'
 alias chrome-refresh-windows-size='cp ~/.config/google-chrome/Default/PreferencesBKP ~/.config/google-chrome/Default/Preferences'
 alias py='python -q'
 alias minecraft='java -jar ~/Mineshafter-launcher.jar'
+alias ableton='~/musica/ableton/run_safely.sh'
 source /etc/profile.d/vte.sh
 # export LANG=pt_BR.UTF-8
 # export LC_CTYPE=pt.UTF-8

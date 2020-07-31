@@ -7,6 +7,10 @@ colorscheme jupiter
 " custom Esc
 imap jf <Esc>
 imap fj <Esc>
+imap jk <Esc>
+imap kj <Esc>
+imap ., <Esc>
+imap ,. <Esc>
 
 " tab
 set tabstop=4 

@@ -8,4 +8,6 @@ GTK2_RC_FILES=/usr/share/themes/Sweet-mars/gtk-2.0/gtkrc
 xscreeensaver &
 feh --bg-max Imagens/bg.*
 sxhkd &
+wmname compiz  # java apps fix
+export AWT_TOOLKIT=MToolkit  # java apps fix
 exec bspwm
