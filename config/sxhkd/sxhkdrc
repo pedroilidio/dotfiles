@@ -31,7 +31,7 @@ alt + super + s
 super + b
 	firefox
 # chat
-super + c
+super + e
     telegram-desktop
 # file-explorer
 super + n
