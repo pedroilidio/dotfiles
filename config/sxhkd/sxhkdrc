@@ -29,7 +29,8 @@ alt + super + s
 
 # browser
 super + b
-	firefox
+    qutebrowser
+	# firefox
 # chat
 super + e
     telegram-desktop
@@ -52,6 +53,10 @@ super + Escape
 #
 # bspwm hotkeys
 #
+
+# rotate window
+super + {_, shift +}r
+    bspc node @parent -R {90, -90}
 
 # quit/restart bspwm
 super + alt + {q,r}

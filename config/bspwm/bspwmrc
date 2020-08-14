@@ -20,6 +20,7 @@ bspc config focus_follows_pointer     true
 bspc rule -a Eog state=floating
 bspc rule -a Pavucontrol state=floating
 bspc rule -a firefox desktop='^3'
+bspc rule -a qutebrowser desktop='^3'
 bspc rule -a TelegramDesktop desktop='^10'
 bspc rule -a Spotify desktop='^9'
 
