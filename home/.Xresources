@@ -1,10 +1,32 @@
+! reload this file with xrdb ~/.Xresources
+
+!! URxvt Appearance
+! get fonts with fc-list
+URxvt.font: xft:VictorMono-Regular
+URxvt.boldFont: xft:VictorMono-Bold
+URxvt.italicFont: xft:VictorMono-Italic
+URxvt.boldItalicfont: xft:VictorMono-BoldItalic
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 92x24
+URxvt.internalBorder: 20
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+!URxvt.depth: 24
+URxvt.iso14755: false
+
 ! special
 *.foreground:   #bcbcbc
 *.background:   #000000
 *.cursorColor:  #bcbcbc
 
 ! black
-*.color0:       #875f5f
+*.color0:       #000
+!*.color0:       #875f5f
 *.color8:       #af8787
 
 ! red

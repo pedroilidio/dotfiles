@@ -30,17 +30,21 @@ alt + super + s
 # browser
 super + b
     qutebrowser
-	# firefox
+
 # chat
 super + e
     telegram-desktop
+
 # file-explorer
 super + n
     nautilus
 
 # terminal emulator
-super + Return
-	kitty
+super + {_,shift +} Return
+	{kitty, urxvt}
+
+super + x
+    xkill
 
 # program launcher
 super + space
@@ -49,6 +53,10 @@ super + space
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+# lock screen
+super + q
+    XSECURELOCK_DISCARD_FIRST_KEYPRESS=0 XSECURELOCK_PASSWORD_PROMPT=emoticon XSECURELOCK_FONT=VictorMono XSECURELOCK_SAVER=saver_xscreensaver xsecurelock
 
 #
 # bspwm hotkeys
