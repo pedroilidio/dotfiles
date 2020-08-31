@@ -49,6 +49,11 @@ padding = options.get('padding', {
     'left': spacing['horizontal']
 })
 
+c.backend = 'webengine'
+## Dark Mode
+c.colors.webpage.darkmode.enabled = True
+c.colors.webpage.darkmode.policy.images = 'smart'
+
 ## Background color of the completion widget category headers.
 c.colors.completion.category.bg = palette['background']
 
@@ -309,9 +314,9 @@ c.colors.tabs.selected.odd.fg = palette['foreground']
 ## Tab padding
 c.tabs.padding = padding
 c.tabs.indicator.width = 1
+c.tabs.indicator.padding['right'] = 8
 c.tabs.favicons.scale = 1
 
 #c.fonts.default_family = 'VictorMono'
 c.fonts.default_family = 'FiraCode'
 c.editor.command = ['urxvt', '-e', 'vim', '{}']  # execute vim on urxvt
-
