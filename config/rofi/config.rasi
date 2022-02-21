@@ -1,12 +1,14 @@
 configuration {
 	modi: "drun,window,run,ssh";
+    normal-window: true;/* Not working? Set in sxhkdrc. */
+	font: "VictorMono 16";
+	fullscreen: false;
 /*	width: 50;*/
 /*	lines: 15;*/
 /*	columns: 1;*/
-	font: "VictorMono 18";
 /*	bw: 1;*/
 /*	location: 0;*/
-	padding: 200;
+/*	padding: 200;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
@@ -43,7 +45,6 @@ configuration {
 /*	filter: ;*/
 /*	separator-style: "dash";*/
 /*	hide-scrollbar: false;*/
-	fullscreen: true;
 /*	fake-transparency: false;*/
 /*	dpi: -1;*/
 /*	threads: 0;*/
@@ -53,7 +54,7 @@ configuration {
 /*	window-format: "{w}    {c}   {t}";*/
 /*	click-to-exit: true;*/
 /*	show-match: true;*/
-	theme: "my-gruvbox-dark";
+/*	theme: "my-gruvbox-dark";*/
 /*	color-normal: ;*/
 /*	color-urgent: ;*/
 /*	color-active: ;*/
@@ -143,5 +144,5 @@ configuration {
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 }
-
+@theme "my-gruvbox-dark"
 /* vim:ft=css

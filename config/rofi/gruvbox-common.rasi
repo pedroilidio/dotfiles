@@ -9,7 +9,7 @@
 window {
     background-color: @background;
     border:           0;
-    padding:          300;
+    padding:          30;
 }
 
 mainbox {
@@ -40,6 +40,11 @@ listview {
 element {
     border:  0;
     padding: 2px;
+}
+
+element-text {
+ background-color: inherit;
+ text-color: inherit;
 }
 
 element.normal.normal {

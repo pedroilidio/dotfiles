@@ -19,12 +19,12 @@ bspc config focus_follows_pointer     true
 
 # Get app names (classes) with xprop
 bspc rule -a Eog state=floating
+bspc rule -a rofi state=floating
 bspc rule -a Pavucontrol state=floating
 bspc rule -a firefox desktop='^3'
 bspc rule -a qutebrowser desktop='^3'
 bspc rule -a TelegramDesktop desktop='^10'
 bspc rule -a Spotify desktop='^9'
-bspc rule -a albert follow=on
 
 # bspc rule -a Gimp desktop='^8' state=floating follow=on
 # bspc rule -a Chromium desktop='^2'

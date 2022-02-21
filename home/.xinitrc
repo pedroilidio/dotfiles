@@ -1,5 +1,5 @@
 # cp ~/.config/google-chrome/Default/PreferencesBKP ~/.config/google-chrome/Default/Preferences
-setxkbmap -layout br,dvorak -option "grp:alt_caps_toggle"
+setxkbmap -layout br,dvorak,vim -option "grp:alt_caps_toggle"
 xsetroot -cursor_name left_ptr &
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 GTK_THEME=Sweet:mars

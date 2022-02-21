@@ -8,6 +8,8 @@ config_version: 2
 settings:
   backend:
     global: webengine
+  colors.webpage.darkmode.enabled:
+    global: false
   completion.open_categories:
     global:
     - searchengines

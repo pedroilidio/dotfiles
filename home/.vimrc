@@ -38,9 +38,27 @@ function! SynGroup()
     echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
 endfun
 
-nnoremap <C-i> :call SynGroup()<ENTER>
+" nnoremap <C-i> :call SynGroup()<ENTER>
 
 let g:slime_target = "kitty"
 
 " '.' is current file location.
 set autochdir
+
+
+" MARKDOWN STUFF
+autocmd FileType markdown nmap <buffer><silent> <leader>p :call mdip#MarkdownClipboardImage()<CR>
+" there are some defaults for image directory and image name, you can change them
+" let g:mdip_imgdir = 'img'
+" let g:mdip_imgname = 'image'
+
+" markdown-preview
+" I've created chromium-app in .bashrc
+"let g:mkdp_browser = 'chromium-app'
+let g:mkdp_browserfunc = 'OpenURL'
+let g:mkdp_echo_preview_url = 1
+let g:mkdp_markdown_css = expand('~/ricing/markdown_style.css')
+
+function OpenURL(url)
+    execute "!chromium" "--app=" . a:url
+endfunction

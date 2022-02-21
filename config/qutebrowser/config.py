@@ -52,7 +52,7 @@ padding = options.get('padding', {
 c.backend = 'webengine'
 ## Dark Mode
 c.colors.webpage.darkmode.enabled = True
-c.colors.webpage.darkmode.policy.images = 'smart'
+# c.colors.webpage.darkmode.policy.images = 'smart'
 
 ## Background color of the completion widget category headers.
 c.colors.completion.category.bg = palette['background']
