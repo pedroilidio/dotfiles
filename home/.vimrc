@@ -1,8 +1,12 @@
 let python_highlight_all=1
 syntax on
 
+" set lighline theme (in yor lightline config)
+" let g:lightline = { 'colorscheme': 'wal' }
+let g:lightline = { 'colorscheme': 'wombat' }
+
 set background=dark
-colorscheme jupiter
+colorscheme wpgtkAlt
 
 " custom Esc
 imap jf <Esc>
@@ -27,10 +31,6 @@ set nu rnu
 
 set laststatus=2
 
-" enable lighline theme
-let g:jupiter_lightline = 1
-" set lighline theme (in yor lightline config)
-let g:lightline = { 'colorscheme': 'jupiter' }
 
 " show highlight group under cursor on <C-i>
 function! SynGroup()

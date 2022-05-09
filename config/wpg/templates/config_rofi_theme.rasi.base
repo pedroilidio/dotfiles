@@ -11,23 +11,23 @@
    Modified: Mon Feb 12 2018 04:08:43 PST -0800
    ========================================================================== */
 
-* {
+* {{
     /* Theme settings */
     highlight: bold;
     scrollbar: false;
 
     /* Gruvbox dark colors */
     transparent:	       #00000000;
-    gruvbox-dark-bg0:          #000000dd;
-    gruvbox-dark-bg0-soft:     #666666dd;
-    gruvbox-dark-bg3:          #665c54;
-    gruvbox-dark-fg0:          #ffd75f;
-    gruvbox-dark-fg1:          #ffffaf;
-    gruvbox-dark-red-dark:     #cc241d;
-    gruvbox-dark-red-light:    #fb4934;
-    gruvbox-dark-yellow-dark:  #d79921;
-    gruvbox-dark-yellow-light: #fabd2f;
-    gruvbox-dark-gray:         #a89984;
+    gruvbox-dark-bg0:          {color0}dd;
+    gruvbox-dark-bg0-soft:     {color8}dd;
+    gruvbox-dark-bg3:          {color1};
+    gruvbox-dark-fg0:          {color1};
+    gruvbox-dark-fg1:          {color15};
+    gruvbox-dark-red-dark:     {color2};
+    gruvbox-dark-red-light:    {color10};
+    gruvbox-dark-yellow-dark:  {color3};
+    gruvbox-dark-yellow-light: {color11};
+    gruvbox-dark-gray:         {inactive};
 
     /* Theme colors */
     background:                  @gruvbox-dark-bg0;
@@ -57,6 +57,6 @@
     alternate-urgent-foreground: @urgent-foreground;
     selected-urgent-background:  @gruvbox-dark-red-light;
     selected-urgent-foreground:  @urgent-foreground;
-}
+}}
 
-@import "gruvbox-common.rasi"
+@import "theme-common.rasi"

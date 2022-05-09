@@ -2,10 +2,6 @@
 # wm independent hotkeys
 #
 
-# screen brightness
-{XF86MonBrightnessUp,XF86MonBrightnessDown}
-    xbacklight {-inc,-dec} 10
-
 # volume control
 {XF86AudioRaiseVolume,XF86AudioLowerVolume,XF86AudioMute}
     amixer -qD pulse set Master {10%+,10%-,toggle}
@@ -14,14 +10,14 @@
 {_,shift +,alt +} Print
     sleep 0.2; \
     scrot {_,--select --freeze,--focused} \
-    ~/Imagens/screenshots/$(date +%F_%T).png
+    ~/tmp/$(date +%F_%T).png
 
 # print only to clipboard (removing after did not work)
 ctrl + {_,shift +,alt +} Print
     sleep 0.2; \
     scrot --exec 'xclip -selection c -t image/png < $f' \
     {_,--select --freeze,--focused} \
-    ~/Imagens/screenshots/$(date +%F_%T).png
+    ~/tmp/$(date +%F_%T).png
 
 # reload sxhkd
 alt + super + s
@@ -29,7 +25,7 @@ alt + super + s
 
 # browser
 super + b
-    qutebrowser
+    firefox
 
 # chat
 super + e
@@ -48,7 +44,7 @@ super + x
 
 # program launcher
 super + space
-	rofi -show drun -normal-window
+	rofi -show drun
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -167,3 +163,11 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# screen brightness
+{XF86MonBrightnessUp,XF86MonBrightnessDown}
+    xbacklight {-inc,-dec} 10
+
+# change to random theme
+super + alt + t
+    wpg -m

@@ -1,13 +1,31 @@
-# cp ~/.config/google-chrome/Default/PreferencesBKP ~/.config/google-chrome/Default/Preferences
-setxkbmap -layout br,dvorak,vim -option "grp:alt_caps_toggle"
+setxkbmap -layout br,dvorak -option "grp:alt_caps_toggle"
 xsetroot -cursor_name left_ptr &
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
-GTK_THEME=Sweet:mars
-GTK2_RC_FILES=/usr/share/themes/Sweet-mars/gtk-2.0/gtkrc
-# exec google-chrome-stable --start-maximized
-xscreeensaver &
-feh --bg-max Imagens/bg.*
+
 sxhkd &
-wmname compiz  # java apps fix
-export AWT_TOOLKIT=MToolkit  # java apps fix
+xsettingsd &
+picom &
+
+# needed for vscode to login properly.
+eval $(gnome-keyring-daemon --start)
+export SSH_AUTH_SOCK
+
+# Download and set wallpapers from Reddit
+# Only one first, to start X faster
+python $HOME/progjetos/find_colors/get_reddit_wallpaper.py -r wallpapers -n 1 -o /tmp/reddit -s top -t week
+
+mkdir /tmp/wpg
+mkdir /tmp/wpg/wallpapers
+mkdir /tmp/wpg/schemes
+mkdir /tmp/wpg/samples
+
+shopt -s extglob
+wpg -a /tmp/reddit/*/!(*.json)
+wpg -m
+
+# Download some more wallpapers in the background
+( python $HOME/dotfiles/scripts/get_reddit_wallpaper.py -r wallpapers \
+    -n 10 -o /tmp/reddit -s top -t week \
+    && wpg -a /tmp/reddit/*/!(*.json) ) &
+
 exec bspwm
