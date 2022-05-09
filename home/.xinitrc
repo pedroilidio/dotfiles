@@ -2,9 +2,7 @@ setxkbmap -layout br,dvorak -option "grp:alt_caps_toggle"
 xsetroot -cursor_name left_ptr &
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
-sxhkd &
 xsettingsd &
-picom &
 
 # needed for vscode to login properly.
 eval $(gnome-keyring-daemon --start)
