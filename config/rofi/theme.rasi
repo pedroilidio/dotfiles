@@ -18,16 +18,16 @@
 
     /* Gruvbox dark colors */
     transparent:	       #00000000;
-    gruvbox-dark-bg0:          #110e10dd;
-    gruvbox-dark-bg0-soft:     #919889dd;
-    gruvbox-dark-bg3:          #925421;
-    gruvbox-dark-fg0:          #925421;
-    gruvbox-dark-fg1:          #d0dac4;
-    gruvbox-dark-red-dark:     #1D8C5E;
-    gruvbox-dark-red-light:    #1D8C5E;
-    gruvbox-dark-yellow-dark:  #6D9F75;
-    gruvbox-dark-yellow-light: #6D9F75;
-    gruvbox-dark-gray:         #104c33;
+    gruvbox-dark-bg0:          #0d1112dd;
+    gruvbox-dark-bg0-soft:     #a08a72dd;
+    gruvbox-dark-bg3:          #6F655A;
+    gruvbox-dark-fg0:          #6F655A;
+    gruvbox-dark-fg1:          #e5c6a4;
+    gruvbox-dark-red-dark:     #455B62;
+    gruvbox-dark-red-light:    #455B62;
+    gruvbox-dark-yellow-dark:  #4D6269;
+    gruvbox-dark-yellow-light: #4D6269;
+    gruvbox-dark-gray:         #263235;
 
     /* Theme colors */
     background:                  @gruvbox-dark-bg0;

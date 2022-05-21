@@ -1,0 +1,8 @@
+config/wpg/sequences
+config/wpg/current
+config/wpg/wp_init.sh
+config/rofi/theme.rasi
+config/polybar/colors.ini
+config/kitty/kitty.conf
+home/.Xresources
+

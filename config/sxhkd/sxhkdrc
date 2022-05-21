@@ -170,4 +170,5 @@ super + {Left,Down,Up,Right}
 
 # change to random theme
 super + alt + t
-    wpg -m
+    wpg -m && pywalfox update; \
+    wal-telegram -t -d /tmp/wal-telegram

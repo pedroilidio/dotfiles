@@ -10,7 +10,7 @@ export SSH_AUTH_SOCK
 
 # Download and set wallpapers from Reddit
 # Only one first, to start X faster
-python $HOME/dotfiles/get_reddit_wallpapers.py -r wallpapers -n 1 -o /tmp/reddit -s top -t week
+python $HOME/dotfiles/get_reddit_wallpaper.py -r wallpapers -n 1 -o /tmp/reddit -s top -t week
 
 mkdir /tmp/wpg
 mkdir /tmp/wpg/wallpapers
@@ -22,7 +22,7 @@ wpg -a /tmp/reddit/*/!(*.json)
 wpg -m
 
 # Download some more wallpapers in the background
-( python $HOME/dotfiles/get_reddit_wallpapers.py -r wallpapers \
+( python $HOME/dotfiles/get_reddit_wallpaper.py -r wallpapers \
     -n 10 -o /tmp/reddit -s top -t week \
     && wpg -a /tmp/reddit/*/!(*.json) ) &
 
